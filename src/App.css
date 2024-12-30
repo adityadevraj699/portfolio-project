@@ -1,0 +1,19 @@
+/* Progress Bar Background */
+.progress-bar-bg {
+    transition: width 1s ease-out;
+    border-radius: 12px;
+  }
+  
+  /* Tooltip for Skill Percentage */
+  .skill-tooltip {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    top: -40px;
+  }
+  
+  /* When progress bar is hovered */
+  .progress-bar-bg:hover ~ .skill-tooltip {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+  }
+  

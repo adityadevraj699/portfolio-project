@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #ffffff; /* Light Mode Background */
+    color: #1e293b; /* Light Mode Text */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+body.dark {
+    background-color: #030712; /* Dark Mode Background */
+    color: #f8fafc; /* Dark Mode Text */
+}
+
+.toggle-button {
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #64748b; /* Slate Gray Button Background */
+    color: #f8fafc;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+body.dark .toggle-button {
+    background-color: #fcfdff;
+}
+
+.mode-icon {
+    width: 30px;
+    height: 30px;
+}
+ ::-webkit-scrollbar{
+    width: 0;
+ }
